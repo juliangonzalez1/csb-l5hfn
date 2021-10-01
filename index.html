@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Podcast Julián González</title>
+
+    <link rel="stylesheet" href="./CSS/1header.css" />
+    <link rel="stylesheet" href="./CSS/2title.css" />
+    <link rel="stylesheet" href="./CSS/3episodies.css" />
+    <link rel="stylesheet" href="./CSS/4description.css" />
+    <link rel="stylesheet" href="./CSS/5images.css" />
+    <link rel="stylesheet" href="./CSS/6topics.css" />
+    <link rel="stylesheet" href="./CSS/7novelties.css" />
+    <link rel="stylesheet" href="./CSS/8footer.css" />
+    <link rel="stylesheet" href="./CSS/utilities.css" />
+  </head>
+  <body>
+    <div class="header flex justify-between align-center">
+      <div class="logo">
+        <img
+          height="36px"
+          width="36px"
+          class="icon"
+          src="./RECURSOS/ÍCONOS/logo.svg"
+          alt="Ícono"
+        />
+      </div>
+      <nav class="desktop-list">
+        <a class="button-dlist" href="#EPISODIOS">EPISODIOS</a>
+        <a class="button-dlist" href="#NOSOTROS">NOSOTROS</a>
+        <a class="button-dlist" href="#ENTREVISTAS">ENTREVISTAS</a>
+        <a class="button-dlist" href="#TOPICOS">TÓPICOS</a>
+      </nav>
+
+      <nav class="mobile-list justify-center align-center">
+        <input type="checkbox" id="burger" />
+        <label for="burger">
+          <img
+            class="burger-icon"
+            src="./RECURSOS/ÍCONOS/burger-icon.svg"
+            alt="Burger icon"
+          />
+        </label>
+        <nav class="mob-list align-center">
+          <div><a href="#EPISODIOS">EPISODIOS</a></div>
+          <div><a href="#NOSOTROS">NOSOTROS</a></div>
+          <div><a href="#ENTREVISTAS">ENTREVISTAS</a></div>
+          <div><a href="#TOPICOS">TÓPICOS</a></div>
+        </nav>
+      </nav>
+    </div>
+
+    <div class="title flex">
+      <h1 class="title0">
+        Hello <span class="line">world</span> pale blue dot<span class="point"
+          >.</span
+        >
+      </h1>
+      <p class="paragraph0">
+        El portal de podcasts que explora el mundo de la programación y la
+        tecnología. Nuevos episodios, todos los jueves cada 15 días.
+      </p>
+      <button
+        class="ButtonCon flex justify-center align-center"
+        onclick="location.href=#NOSOTROS"
+        type="button"
+      >
+        CONOCÉ MÁS
+      </button>
+    </div>
+
+    <div class="episodies">
+      <div class="polygon1">
+        <h2 id="EPISODIOS" class="titleEpd">Episodios</h2>
+        <div class="episodiesconteiner flex">
+          <iframe
+            class="episodie0"
+            src="https://open.spotify.com/embed/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            class="episodie0"
+            src="https://open.spotify.com/embed/episode/1ezdL2ivAGLwSE6Xbssxqt"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            class="episodie0"
+            src="https://open.spotify.com/embed/episode/3cWta1iiQSfvrdHaCbLkSD?theme=0"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            class="episodie0"
+            src="https://open.spotify.com/embed/episode/31VyAQAwBiKoHVoYUCEzjQ"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="NOSOTROS" class="description flex justify-center">
+      <img
+        class="imgphone"
+        src="./RECURSOS/IMÁGENES/phone.png"
+        alt="Teléfono"
+      />
+      <div class="description-content flex">
+        <h2 class="titledescrip">De dónde venimos</h2>
+        <p class="descrparag1">
+          Our posturings, our imagined self-importance, the delusion that we
+          have some privileged position in the Universe, are challenged by this
+          point of pale light.
+        </p>
+        <p class="descrparag2">
+          Our planet is a lonely speck in the great enveloping cosmic dark. In
+          our obscurity, in all this vastness, there is no hint that help will
+          come from elsewhere to save us from ourselves.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="titleinv" id="ENTREVISTAS">
+        Invitadas/os estelares
+      </h2>
+    </div>
+
+    <div class="image-list flex">
+      <img
+        class="photo"
+        src="./RECURSOS/IMÁGENES/image1.png"
+        alt="Grace Hopper"
+      />
+      <img
+        class="photo"
+        src="./RECURSOS/IMÁGENES/image2.png"
+        alt="Katie Bouman"
+      />
+      <img
+        class="photo"
+        src="./RECURSOS/IMÁGENES/image3.png"
+        alt="Margaret Hamilton"
+      />
+      <img
+        class="photo"
+        src="./RECURSOS/IMÁGENES/image4.png"
+        alt="Computer 1"
+      />
+      <img
+        class="photo"
+        src="./RECURSOS/IMÁGENES/image5.png"
+        alt="Computer 2"
+      />
+      <img
+        class="photo"
+        src="./RECURSOS/IMÁGENES/image6.png"
+        alt="Susan Kare"
+      />
+    </div>
+
+    <div class="topics">
+      <h2 id="TOPICOS" class="TopTheme">Algunos de nuestros temas</h2>
+      <div class="box-icon flex">
+        <div class="box-icon1">
+          <img src="./RECURSOS/ÍCONOS/icon1.svg" alt="ThemeIcon" />
+          <h4>Trabajo remoto</h4>
+        </div>
+        <div class="box-icon1">
+          <img src="./RECURSOS/ÍCONOS/icon2.svg" alt="ThemeIcon" />
+          <h4>Repensando la programación</h4>
+        </div>
+        <div class="box-icon1">
+          <img src="./RECURSOS/ÍCONOS/icon3.svg" alt="ThemeIcon" />
+          <h4>Bases del código</h4>
+        </div>
+        <div class="box-icon1">
+          <img src="./RECURSOS/ÍCONOS/icon4.svg" alt="ThemeIcon" />
+          <h4>Seguridad informática</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="novelties">
+      <div class="polygon2 flex">
+        <div class="novcontainer">
+          <h2 class="titleNov">
+            ¿Querés las últimas novedades?
+          </h2>
+          <button
+            class="buttonEps"
+            onclick="location.href=#EPISODIOS"
+            type="button"
+          >
+            ESCUCHÁ LOS EPISODIOS
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer flex">
+      <div class="brand">
+        <p>© 2019— Hello blue pale dot</p>
+      </div>
+      <div class="iconsFooter">
+        <a href="https://spotify.com/" target="_blank">
+          <img
+            src="./RECURSOS/ÍCONOS/iconspotify.svg"
+            alt="Spotify"
+            class="iconF"
+        /></a>
+        <a href="https://instagram.com/" target="_blank"
+          ><img
+            src="./RECURSOS/ÍCONOS/iconinstagram.svg"
+            alt="Instagram"
+            class="iconF"
+        /></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><img
+            src="./RECURSOS/ÍCONOS/icontwitter.svg"
+            alt="Twitter"
+            class="iconF"
+        /></a>
+        <a href="https://facebook.com/" target="_blank"
+          ><img
+            src="./RECURSOS/ÍCONOS/iconfacebook.svg"
+            alt="Facebook"
+            class="iconF"
+        /></a>
+        <a href="https://telegram.org/" target="_blank"
+          ><img
+            src="./RECURSOS/ÍCONOS/icontelegram.svg"
+            alt="Telegram"
+            class="iconF"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+.description {
+  position: relative;
+  overflow: visible;
+  margin-top: 0px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.imgphone {
+  margin-top: -168px;
+  width: 457.6px;
+  display: block;
+}
+.description-content {
+  flex-direction: column;
+}
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap");
+h2.titledescrip {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 24px;
+}
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=IBM+Plex+Sans:wght@100&display=swap");
+.descrparag1 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+.descrparag2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  .description {
+    margin-top: -40px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .imgphone {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .description {
+    flex-direction: column;
+    width: 100%;
+  }
+  .imgphone {
+    width: 360px;
+    margin-top: -30px;
+    padding-right: 55px;
+  }
+  h2.titledescrip {
+    font-size: 36px;
+    padding-bottom: 10px;
+  }
+  .descrparag1 {
+    font-size: 14px;
+  }
+  .descrparag2 {
+    font-size: 14px;
+  }
+}

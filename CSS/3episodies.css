@@ -1,0 +1,74 @@
+.episodies {
+  position: relative;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  width: 100%;
+  height: 1042.6px;
+}
+
+.polygon1 {
+  clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0% 5%);
+  background: linear-gradient(#0000ff 100%, #0000a3 100%);
+  width: 100%;
+  height: 1042.6px;
+  margin: 0px;
+}
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap");
+.titleEpd {
+  position: relative;
+  width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: white;
+  font-size: 48px;
+  padding-left: 200px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.episodiesconteiner {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.episodie0 {
+  width: 47%;
+  height: 232px;
+  border: 0;
+  padding-left: 100px;
+  padding-bottom: 72px;
+}
+@media screen and (max-width: 1000px) {
+  .episodiesconteiner {
+    position: relative;
+    width: 100%;
+  }
+  .titleEpd {
+    padding-left: 50px;
+  }
+  .episodie0 {
+    width: 46%;
+    height: 100%;
+    margin: 0px;
+    padding-top: 21px;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .episodies {
+    margin-top: 0px;
+  }
+  .titleEpd {
+    padding: 0;
+    padding-left: 16px;
+    padding-bottom: 21px;
+    padding-top: 60px;
+    font-size: 36px;
+  }
+
+  .episodie0 {
+    position: relative;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 200px;
+  }
+}

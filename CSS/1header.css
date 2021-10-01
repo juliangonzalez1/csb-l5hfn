@@ -1,0 +1,103 @@
+.header {
+  height: 80px;
+  width: 100%;
+  padding: none;
+  margin: none;
+}
+.header .logo .icon {
+  margin-left: 100px;
+}
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=IBM+Plex+Sans:wght@100&display=swap");
+.desktop-list {
+  margin-right: 86px;
+}
+.desktop-list a {
+  font-size: 16px;
+  color: #060a24;
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  margin: 24px;
+}
+
+.button-dlist:hover {
+  color: #00f3bb;
+  text-decoration: line-through;
+}
+.button-dlist:active {
+  color: #8f060a24;
+}
+.mobile-list {
+  display: none;
+  position: relative;
+}
+.mob-list {
+  position: absolute;
+  display: none;
+  top: 40px;
+  right: 0;
+  font-size: 16px;
+  background-color: #0000ec;
+  padding-left: 6px;
+  margin: 0px;
+  cursor: pointer;
+  width: 100vw;
+}
+.mob-list a {
+  color: #ffffff;
+  font-family: "IBM Plex Mono", monospace;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 16px;
+  padding-top: 16px;
+}
+#burger {
+  display: none;
+}
+#burger:checked ~ .mob-list {
+  padding: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .header .logo .icon {
+    margin-top: 10px;
+    margin-left: 16px;
+  }
+  .mobile-list {
+    display: none;
+  }
+  .desktop-list {
+    margin-right: 16px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .mobile-list {
+    display: block;
+    display: flex;
+  }
+  .mob-list a:hover {
+    color: #00f3bb;
+    text-decoration: line-through;
+  }
+  .desktop-list {
+    display: none;
+  }
+  #burger:checked ~ .mob-list {
+    display: block;
+  }
+  .header .logo .icon {
+    margin-top: 10px;
+    margin-left: 16px;
+    height: 24px;
+    width: 24px;
+  }
+  .burger-icon {
+    position: relative;
+    margin-top: 16px;
+    margin-right: 19px;
+    height: 12px;
+    width: 18px;
+  }
+}
